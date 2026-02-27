@@ -8,6 +8,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="inter-font">
     <header>
@@ -19,23 +20,30 @@
                <li class="nav-li"> <a href="" class="nav-link"> Episodes</a></li>
                <li class="nav-li"> <a href="" class="nav-link"> Host</a></li>
             </ul>
-            <button class="button">Subscribe</button>
+            <div>
+                <button class="button">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                <img src="assets/hamburger-menu.png" id="menubar">
+            </div>
         </nav>
     </header>
     <main>
         <section class="banner-section background-blue">
-            <div class="banner-image">
+           <div>
+            <button id="badge"> NEW</button>
+             <div class="banner-image">
                 <img src="assets/microphone.png" alt="">
-            </div>
-            <div class="banner-text">
-                <h2>TechWave</h2>
-             <p>
-                Your daily dose of tech insights, productivity hacks, and personal growth
-             </p>
-             <div class="btn-holder">
-                <button class="button"><img src="assets/spotify.png" alt=""> Listen on spotify</button>
              </div>
-            </div>
+             <div class="banner-text">
+                 <h2>TechWave</h2>
+                 <p>
+                   Your daily dose of tech insights, productivity hacks, and personal growth
+                 </p>
+                 <div class="btn-holder">
+                     <button class="button"><img src="assets/spotify.png" alt=""> Listen on spotify</button>
+                     <button id="green-button"><img src="assets/message.png" alt=""> Subscribe</button>
+                 </div>
+             </div>
+           </div>
         </section>
     </main>
 </body>
