@@ -53,16 +53,7 @@ nav{
     align-items: center;
 }
 
-#badge{
-    color: #1A0B2E;
-    background-color: #00FF88;
-    border: none;
-    border-radius: 1000px;
-    padding: 8px 16px;
-    box-shadow: 0 3 27 0 #00FF88;
-    margin-left: 360px;
-   
-}
+
 
 nav #menubar{
     display: none;
@@ -101,6 +92,18 @@ nav .nav-li{
     border-radius: 10000px;
     padding: 12px 20px;
     text-align: center;
+}
+
+#badge{
+    color: #1A0B2E;
+    background-color: #00FF88;
+    border: none;
+    border-radius: 1000px;
+    padding: 8px 16px;
+    box-shadow: 0 3 27 0 #00FF88;
+    margin-left: 355px;
+    margin-top: 130px;
+   
 }
 
 .banner-section{
@@ -142,6 +145,48 @@ nav .nav-li{
 
 }
 
+/* podcast section related style */
+.podcast-section{
+    text-align: center;
+    justify-items: center;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+}
+.podcast-container h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.podcast-container #podcast-p{
+    max-width: 1200px;
+    line-height: 20px;
+    margin-bottom: 80px;
+}
+.podcast-container{
+    padding-top: 40px;
+    
+
+}
+.podcast-section hr{
+    max-width: 1200px;
+}
+.star-container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    
+}
+.star{
+    /* border: 1px solid red;
+    background-color: aqua; */
+}
+.star-container .star .star-h{
+    font-size: 3rem;
+    color: #00FF88;
+}
+
+
 /* Responsive Section */
 @media screen and (max-width: 576px) {
     nav .nav-ul{
@@ -164,5 +209,9 @@ nav .nav-li{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .star-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
