@@ -1,0 +1,92 @@
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+/* shared styles */
+.background-blue{
+    background-color: #1A0B2E;
+
+}
+
+.colored-text{
+    background-image: linear-gradient(to bottom left, purple, rgb(142, 29, 122), rgb(219, 214, 46) );
+    background-clip: text;
+    color: transparent;
+
+}
+
+/* nav related styles */
+nav{
+    display: flex;
+    gap: 314px;
+    padding: 30px 200px;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #1A0B2E;
+
+}
+nav .hamburger-menu{
+    
+}
+nav h3{
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+nav .nav-ul{
+    display: flex;
+    gap: 32px;
+}
+nav .nav-link{
+    text-decoration: none;
+    color: white;
+}
+nav .nav-li{
+    list-style: none;
+}
+
+.button{
+    background-image: linear-gradient( to bottom left, rgb(81, 7, 98), rgb(147, 25, 123), rgb(155, 107, 18), rgb(216, 216, 41));
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10000px;
+    width: 135px;
+    height: 44px;
+    padding: 12px 16px;
+}
+
+/* banner related styles */
+.banner-image{
+    /* background-image: url(../assets/hero-circle.png), url(../assets/hero-bg.png); */
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+
+/* Responsive Section */
+@media screen and (max-width: 576px) {
+    nav .nav-ul{
+        display: none;
+    }
+    
+    nav button{
+        display: none;
+    }
+}
