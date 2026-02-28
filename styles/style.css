@@ -98,14 +98,15 @@ nav .nav-li{
 }
 
 #badge{
+    position: absolute;
     color: #1A0B2E;
     background-color: #00FF88;
     border: none;
     border-radius: 1000px;
     padding: 8px 16px;
     box-shadow: 0 3 27 0 #00FF88;
-    margin-left: 355px;
-    margin-top: 130px;
+    right: 470px;
+    top: 170px;
    
 }
 
