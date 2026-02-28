@@ -194,6 +194,7 @@ nav .nav-li{
 .choose-section{
     padding-top: 120px;
     justify-items: center;
+    padding-bottom: 160px;
 }
 .choose-section h4{
     font-size: 3rem;
@@ -204,14 +205,35 @@ nav .nav-li{
 
 .choose-section .card-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 380px);
     grid-template-rows: repeat(2, 225px) 270px;
+    gap: 30px;
 }
 .card-container .card{
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 40px;
+    padding: 40px;
 }
-
+.card-container .card h6{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 16px;
+}
+.card-container .card p{
+    margin-top: 16px;
+}
+#long-layout{
+    grid-row: span 2;
+}
+#wide-layout{
+    grid-column: span 2;
+}
+#icon-bolt{
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient( to bottom left, rgb(81, 7, 98), rgb(147, 25, 123), rgb(155, 107, 18), rgb(216, 216, 41));
+    border-radius: 4px;
+}
 /* Responsive Section */
 @media screen and (max-width: 576px) {
     nav .nav-ul{
