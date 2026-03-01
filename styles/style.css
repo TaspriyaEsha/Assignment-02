@@ -47,6 +47,12 @@ header{
     background-color: #230E3D;
 }
 
+nav h3 , .footer-heading{
+    color: white;
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
 /* nav related styles */
 nav{
     display: flex;
@@ -60,11 +66,6 @@ nav{
 
 nav #menubar{
     display: none;
-}
-nav h3{
-    color: white;
-    font-size: 3.75rem;
-    font-weight: 700;
 }
 
 nav .nav-ul{
@@ -331,6 +332,34 @@ nav .nav-li{
     /* margin-right: 8px; */
 }
 
+/* footer related styles */
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/footer-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 120px;
+}
+.footer-heading{
+    padding-top: 120px;
+}
+.footer-logo-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.footer-logo-container .footer-logo span{
+    /* margin-right: 20px; */
+}
+
 /* Responsive Section */
 @media screen and (max-width: 576px) {
     nav .nav-ul{
@@ -377,5 +406,8 @@ nav .nav-li{
     }
     .host-logo-container{
         justify-content: center;
+    }
+    .footer-logo-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
