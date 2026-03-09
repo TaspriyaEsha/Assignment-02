@@ -23,6 +23,7 @@ header{
 }
 
 /* shared styles */
+
 .background-blue{
     background-color: #1A0B2E;
 
@@ -42,6 +43,10 @@ header{
     border-radius: 10000px;
     padding: 12px 16px;
     text-align: center;
+    
+}
+.button:hover{
+    zoom: 130%;
 }
 .background-light-blue{
     background-color: #230E3D;
@@ -193,6 +198,20 @@ nav .nav-li{
 }
 
 /* choose section related styles */
+
+@keyframes easy-move {
+    from{
+        left: 0px;
+    }
+    to{
+        left: 250px;
+    }
+}
+.card img , .card h3{
+    position: relative;
+    /* animation: name| duration| timing-function| delay| iteration-count| direction| fill-mode*/
+    animation: easy-move 5s ease-in 0.5s infinite alternate;
+}
 .choose-section{
     padding-top: 120px;
     justify-items: center;
@@ -205,7 +224,6 @@ nav .nav-li{
     margin-bottom: 40px;
 
 }
-
 .choose-section .card-container{
     display: grid;
     grid-template-columns: repeat(3, 380px);
@@ -240,6 +258,11 @@ nav .nav-li{
 
 /* featured and host section related styles */
 /* featured related styles */
+.featured-image span{
+    position: relative;
+    /* animation: name| duration| timing-function| delay| iteration-count| direction| fill-mode*/
+    animation: easy-move 5s ease-in 0.5s infinite alternate;
+}
 .featured-and-host{
     margin: 0 auto;
     justify-items: center;
